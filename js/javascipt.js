@@ -11,8 +11,10 @@ function ortalama(){
 }
 
 function adet(){
+    document.getElementById("sonuc2").innerHTML="";
     let a=parseInt(document.getElementById("adet").value);
-    for(i=0;i<a;i++){
+    for(i=1;i<=a;i++){
         document.getElementById("sonuc2").innerHTML+=i;
     }
+    document.getElementById("sonuc2").innerHTML+=" kadar sayı yazıldı";
 }
