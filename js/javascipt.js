@@ -15,5 +15,4 @@ function adet(){
     for(i=0;i<a;i++){
         document.getElementById("sonuc2").innerHTML+=i;
     }
-    document.getElementById("sonuc2").innerHTML+="Kadar sayılar yazdırıldı";
 }
