@@ -13,6 +13,7 @@ function ortalama(){
 function adet(){
     let a=parseInt(document.getElementById("adet").value);
     for(i=0;i<a;i++){
-        document.getElementById("sonuc2").innerHTML=i+" kadar sayı üretildi"
+        document.getElementById("sonuc2").innerHTML+=i;
     }
+    document.getElementById("sonuc2").innerHTML+="Kadar sayılar yazdırıldı";
 }
