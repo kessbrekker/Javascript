@@ -30,8 +30,11 @@ body{
     margin: 0; /* Varsayılan margin kaldırıldı */
     padding: 0; /* Varsayılan padding kaldırıldı */
 }
-.content #sonuc{
+#sonuc{
     float: right;
+}
+#sonuc2{
+    float: left;
 }
 section{
     margin: 0 auto;
