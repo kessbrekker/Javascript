@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+body{
+    margin: 0;
+    background: radial-gradient(circle at top right, rgba(0, 153, 255, 0.5), transparent),
+                radial-gradient(circle at bottom right, rgba(0, 52, 255, 0.5), transparent),
+                radial-gradient(circle at top left, rgba(255, 105, 180, 0.5), transparent),
+                radial-gradient(circle at bottom left, rgba(255, 20, 147, 0.5), transparent); /* Sağ mavi, sol pembe tonları */
+    background-blend-mode: screen; /* Renklerin karışımı */
+    background-size: cover; /* Tam ekran kaplama */
+    background-attachment: fixed; /* Arka plan sabit */
+    color: rgba(255, 255, 255, 0.87); /* Güzel bir beyaz tonu */
+    font-family: 'Poppins', sans-serif; /* Şık ve modern bir font */
+}
+.content{
+    width: 100%;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0); /* Tamamen şeffaf renk */
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 10px;
+    backdrop-filter: blur(15px); /* Buzlu cam efekti */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Hafif gölge efekti */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Buzlu cam kenar efekti */
+}
+.content #ortalama{
+    height: 100%;
+}
+.content h2{
+    margin: 0; /* Varsayılan margin kaldırıldı */
+    padding: 0; /* Varsayılan padding kaldırıldı */
+}
+.content #sonuc{
+    float: right;
+}
+section{
+    margin: 0 auto;
+    width: 50%;
+    padding-right: 40px;
+}
+
+/* Kaydırma çubuğu için stil */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    backdrop-filter: blur(15px); /* Daha belirgin buz efekti */
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Hafif kenar efekti */
+    background-color: rgba(255, 255, 255, 0.2); /* Hafif şeffaf beyaz renk */
+}
+
+::-webkit-scrollbar-track {
+    background: linear-gradient(
+                to bottom,
+                rgba(99, 175, 250, 1), /* Üst taraf için uyumlu mavi tonu */
+                rgba(103, 156, 255, 1)); /* Alt taraf için uyumlu mavi tonu */
+    background-size: 100% 100%; /* Tam boyut kaplama */
+    backdrop-filter: blur(5px); /* Hafif bulanıklık efekti */
+}
+
+input {
+    width: 10%; /* Başlangıç genişliği */
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Hafif şeffaf kenar */
+    border-radius: 5px; /* Yuvarlatılmış köşeler */
+    background-color: rgba(255, 255, 255, 0.1); /* Hafif şeffaf arka plan */
+    color: rgba(255, 255, 255, 0.87); /* Yazı rengi */
+    font-size: 14px; /* Yazı boyutu küçültüldü */
+    backdrop-filter: blur(10px); /* Buzlu cam efekti */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Hafif gölge efekti */
+    transition: width 0.3s ease; /* Genişlik değişimi için animasyon */
+    min-width: 45px; /* Minimum genişlik */
+}
+
+input:focus {
+    outline: none; /* Varsayılan odak çerçevesini kaldır */
+    border: 1px solid rgba(255, 255, 255, 0.5); /* Odaklanınca daha belirgin kenar */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Daha belirgin gölge */
+}
+
+input[type="button"] {
+    width: 75px; /* Sabit genişlik */
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Hafif şeffaf kenar */
+    border-radius: 5px; /* Yuvarlatılmış köşeler */
+    background-color: rgba(255, 255, 255, 0.2); /* Hafif şeffaf arka plan */
+    color: rgba(255, 255, 255, 0.87); /* Yazı rengi */
+    font-size: 14px;
+    backdrop-filter: blur(10px); /* Buzlu cam efekti */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Hafif gölge efekti */
+    cursor: pointer; /* Tıklanabilir işaretçi */
+    transition: background-color 0.3s ease; /* Arka plan rengi değişimi için animasyon */
+    min-width: 75px; /* Minimum genişlik */
+}
+
+input[type="button"]:hover {
+    background-color: rgba(255, 255, 255, 0.3); /* Hover durumunda arka plan rengi */
+}
+.kutu {
+    background-color: royalblue; /* Kutuların arka plan rengi */
+    height: 50px; /* Yükseklik */
+    width: 50px; /* Genişlik */
+    display: inline-block; /* Yan yana dizilim */
+    margin: 5px; /* Kutular arası boşluk */
+    color: white; /* Yazı rengi */
+    text-align: center; /* Yazıyı ortalama */
+    line-height: 50px; /* Yükseklikle aynı, dikey ortalama */
+    border-radius: 5px; /* Köşeleri yuvarlat */
+    font-weight: bold; /* Yazıyı kalın yap */
+}
