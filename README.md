@@ -3,3 +3,4 @@
 - Ortalama Alma
 - Girilen sayıya kadar olan sayıları yazdırma
 - --
+[@kessbrekker](https://www.youtube.com/@kessbrekker)
