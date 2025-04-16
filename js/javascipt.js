@@ -1,3 +1,13 @@
+var date = new Date();
+var day=date.getDate();
+var ay=date.getMonth();
+var year= date.getFullYear();
+var saat=date.getHours();
+var dakika=date.getMinutes();
+var saniye=date.getSeconds();
+var msaniye=date.getMilliseconds();
+
+document.getElementById("sonuc3").innerHTML=day + "/" + ay + "/" + year + " <br>" + saat + "." + dakika + "." + saniye + "." + msaniye;
 function ortalama(){
     s1=parseInt(document.getElementById("sayi1").value);
     s2=parseInt(document.getElementById("sayi2").value);
