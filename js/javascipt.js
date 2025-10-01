@@ -15,6 +15,9 @@ function ortalama(){
     if(ort<50){
         document.getElementById("sonuc").innerHTML=ort + " Notu ile kaldınız";
     }
+    else if(ort>100){
+        document.getElementById("sonuc").innerHTML=ort + " YANLIŞ NOTTTTTTTTTTTTTTT";
+    }
     else{
         document.getElementById("sonuc").innerHTML=ort + " Notu ile geçtiniz";
     }
