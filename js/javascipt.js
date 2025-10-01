@@ -13,7 +13,7 @@ function ortalama(){
     s2=parseInt(document.getElementById("sayi2").value);
     var ort=(s1+s2)/2;
     if(s1>100 || s2>100){
-        document.getElementById("sonuc").innerHTML="YANLIŞ NOTTTTTTTTTTTTTTT";
+        document.getElementById("sonuc").innerHTML="YANLIŞ NOTTTTTTTTTTTTTTT womp womp";
     }
     else if(ort<50){
         document.getElementById("sonuc").innerHTML=ort + " Notu ile kaldınız";
